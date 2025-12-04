@@ -1,0 +1,36 @@
+name: Bug report
+description: You can generate a bug report so we can solve it and discuss it in the bug thread.
+labels: bug
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Thanks for taking the time to fill out this bug report.
+    - type: textarea
+      attributes:
+          label: Description
+          description: Please write a brief description of the bug, including what you expect to happen and what is currently happening.
+          placeholder: |
+              Feature '...' is not working properly. I expect '...' to happen, but '...' happens instead
+      validations:
+          required: true
+
+    - type: textarea
+      attributes:
+          label: Step-by-step reproduction instructions
+          description: Please write the steps needed to reproduce the bug.
+          placeholder: |
+              1. Go to '...'
+              2. Click on '...'
+              3. Scroll down to '...'
+      validations:
+          required: false
+
+    - type: input
+      attributes:
+          label: Environment info
+          description: |
+              Please share a link of your system details.
+          placeholder: https://krishaweb.com/ ... 
+      validations:
+          required: false
